@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marina Boyblos Hotel</title>
+	
+	<link rel="icon" href="logo.png" type="image" />
+	<link rel="shortcut icon" href="logo.png" type="image" />
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="plugins/flexslider/flexslider.css" rel="stylesheet" media="screen" />	
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/responsive-slider.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="css/cubeportfolio.min.css" rel="stylesheet" />
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" />
+
+	<!--sa calendar-->
+	<script type="text/javascript" src="js/datepicker.js"></script>
+        <link href="css/demo.css"       rel="stylesheet" type="text/css" />
+        <link href="css/datepicker.css" rel="stylesheet" type="text/css" />	
+		
+		<!--sa poip up-->
+	<link href="src/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+	  <script src="src/facebox.js" type="text/javascript"></script>
+	  <script type="text/javascript">
+		jQuery(document).ready(function($) {
+		  $('a[rel*=facebox]').facebox({
+			loadingImage : 'src/loading.gif',
+			closeImage   : 'src/closelabel.png'
+		  })
+		})
+	  </script>
+	
+	<!--sa error trapping-->
+	<script type="text/javascript">
+	function validateForm()
+	{
+	var x=document.forms["index"]["start"].value;
+	if (x==null || x=="")
+	  {
+	  alert("you must enter your check in Date(click the calendar icon)");
+	  return false;
+	  }
+	var y=document.forms["index"]["end"].value;
+	if (y==null || y=="")
+	  {
+	  alert("you must enter your check out Date(click the calendar icon)");
+	  return false;
+	  }
+	}
+	</script>
+	
+		<!-- css -->
+	<!--<link href="css1/bootstrap.min.css" rel="stylesheet" />-->
+	
+	<!--<link href="css1/style.css" rel="stylesheet" />-->
+
+	<!-- Theme skin -->
+	<link id="t-colors" href="skins/default.css" rel="stylesheet" />
+
+	<!-- boxed bg -->
+	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<header>
+		<div id="sb-search" class="sb-search">
+				<form>
+						<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+						<input class="sb-search-submit" type="submit" value="">
+						<!--<span class="sb-icon-search" title="Click to start searching"></span>-->
+				</form>
+		</div>
+							
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="navigation">
+				<div class="container">					
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="navbar-brand">
+							<a href="index.html"><img src="images/logo.png" width="107" height="66" alt="" /></a>
+						</div>
+					</div>
+					
+					<div class="navbar-collapse collapse">							
+						<div class="menu">
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation"><a href="index.html" class="active">Home</a></li>
+								<li role="presentation"><a href="about.html">About Us</a></li>
+								<!--<li role="presentation"><a href="services.html">Services</a></li>								
+								<!--<li role="presentation"><a href="gallery.html">Gallary</a></li>
+								<!--<li role="presentation"><a href="blog.html">Blog</a></li>-->
+								<li role="presentation"><a href="contact.html">Contact</a></li>	
+								<li role="presentation"><a href="login.php">Admin</a></li>
+							</ul>
+						</div>
+					</div>						
+				</div>
+			</div>	
+		</nav>		
+	</header>
+	
+	<br><br><br><br>
+	<section id="featured" class="bg">
+	<!-- start slider -->
+
+			
+	<!-- start slider -->
+	<!--<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+	<!-- Slider -->
+        <!--<div id="main-slider" class="main-slider flexslider">
+            <ul class="slides">
+              <li>
+                <img src="images/slides/flexslider/4.jpg" alt="" />
+                <div class="flex-caption">
+                    <h3>Welcome to Marina Hotel</h3> 
+					<p>Best world class hotel and suite in the city of abuja</p> 
+					<!--<a href="#" class="btn btn-theme">Learn More</a>
+                </div>
+              </li>
+              <li>
+                <img src="images/slides/flexslider/5.jpg" alt="" />
+                <div class="flex-caption">
+                    <h3>Experience Real Relaxation</h3> 
+					<p>The best comfort you can ever find in Marina Hotel</p> 
+					<!--<a href="#" class="btn btn-theme">Learn More</a>
+                </div>
+              </li>
+              <li>
+                <img src="images/slides/flexslider/6.jpg" alt="" />
+                <div class="flex-caption">
+                    <h3>VIP siute</h3> 
+					<p>Live in our VIP suite like a home away from home</p> 
+					<!--<a href="#" class="btn btn-theme">Learn More</a>
+                </div>
+              </li>
+            </ul>
+        </div>
+	<!-- end slider 
+			</div>
+		</div>
+	</div>-->
+		<!-- Responsive slider - START -->
+	<div class="slider">
+		<div class="">
+			<div class="">
+				<div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+					<div class="slides" data-group="slides">						
+						<ul>
+							<li>
+								<div class="slide-body" data-group="slide">
+									<img src="images/slides/flexslider/4.jpg" alt="" class="img-responsive" >
+									<div class="flex-caption">
+										<h3>Welcome to Marina Hotel</h3> 
+										<p>Best world class hotel and suite in the city of abuja</p> 
+									<!--<a href="#" class="btn btn-theme">Learn More</a>-->
+									</div>
+								</div>					
+							</li>
+							<li>
+								<div class="slide-body" data-group="slide">
+									<img src="images/slides/flexslider/5.jpg" alt="" class="img-responsive" >
+									<div class="flex-caption">
+										<h3>Experience Real Relaxation</h3> 
+										<p>The best comfort you can ever find in Marina Hotel</p> 
+									<!--<a href="#" class="btn btn-theme">Learn More</a>-->
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="slide-body" data-group="slide">
+									<img src="images/slides/flexslider/6.jpg" alt="" class="img-responsive" >
+										<div class="flex-caption">
+											<h3>VIP siute</h3> 
+											<p>Live in our VIP suite like a home away from home</p> 
+										<!--<a href="#" class="btn btn-theme">Learn More</a>-->
+										</div>
+								</div>
+							</li>					
+						</ul>
+					</div>			   
+					<a class="slider-control left" href="#" data-jump="prev"><i class="fa fa-angle-left fa-2x"></i></a>
+					<a class="slider-control right" href="#" data-jump="next"><i class="fa fa-angle-right fa-2x"></i></a>		
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- Responsive slider - END -->
+</section>
+		
+	<!--<div class="feature">
+		<div class="container">
+			<div class="text-center">
+				<div class="col-md-3">
+					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" >
+						<i class="fa fa-book"></i>	
+						<h2>Full Responsive</h2>
+						<p>Quisque eu ante at tortor imperdiet gravida nec sed turpis phasellus.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" >
+						<i class="fa fa-laptop"></i>	
+						<h2>Retina Ready</h2>
+						<p>Quisque eu ante at tortor imperdiet gravida nec sed turpis phasellus.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" >
+						<i class="fa fa-heart-o"></i>	
+						<h2>Full Responsive</h2>
+						<p>Quisque eu ante at tortor imperdiet gravida nec sed turpis phasellus.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" >
+						<i class="fa fa-cloud"></i>	
+						<h2>Friendly Code</h2>
+						<p>Quisque eu ante at tortor imperdiet gravida nec sed turpis phasellus.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	
+	<div class="about">
+		<div class="container">
+			<div class="col-md-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" >
+				<h2>About Us</h2>
+				<img src="images/8.jpg" class="img-responsive"/>
+				<p>Welcome to Abuja, the most beautify city in Africa. Located in the very centre of Nigeria and in the heart of Africa, 
+				   Abuja blends nature with endowned breathe taking sites. By displaying our tradition of warmth and impeccable service delivery, the Marina Boylos Hotel 
+				   is poised to meet your every desire. Conveniently located in the heart of the Federal capital, the Marina Boyblos Hotel is only 30 minutes'
+				   drive away from Nnamdi Azikiwe International Airport and is nestled within the many tourist sights and sounds of Abuja. Take in the magnificent views of the city from one of our Suites and feel right at home.
+				</p>
+				<a href="about.html" class="btn btn-theme">Learn More</a>
+				
+			</div>
+			<br><p>
+				<div class="rightother">
+  
+					  <div class="">
+						  <div><h2>RESERVATION</h2></div>
+						  <br>
+						<div style="margin-top: 10px;">
+						<form method="post" action="selectroom.php" name="index" onsubmit="return validateForm()">
+					  
+						  <label style="margin-left: 8px;">Start Date : </label>
+						 <input type="text" class="w8em format-d-m-y highlight-days-67 range-low-today" name="start" id="sd" value="" maxlength="10" readonly />
+						  <BR />
+						 <label style="margin-left: 15px;">End Date : </label>
+						  <input type="text" class="w8em format-d-m-y highlight-days-67 range-low-today" name="end" id="ed" value="" maxlength="10" readonly />
+						  <BR />
+						  <label style="margin-left: 45px;">Adult : </label>
+						  <select name="adult" class="ed" >
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						  </select>
+						  <BR />
+						  <label style="margin-left: 44px;">Child : </label>
+						  <select name="child" class="ed">
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+						  </select>
+						  <BR />
+						  <input name="" type="submit" value="Check Availability" id="button" />
+						</form>
+						<div><br />
+						  <a rel="facebox" href="modifyindex.php">Modify</a> / <a href="cancelindex.php">Cancel</a> Reservation   </div>
+						</div>
+						
+						
+					</div>
+					  
+				 </div>
+			</p>		
+		</div>
+	</div>
+	
+	<!--<div class="lates">
+		<div class="container">
+			<div class="text-center">
+				<h2>Lates News</h2>
+			</div>
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+				<img src="images/4.jpg" class="img-responsive"/>
+				<h3>Template built with Twitter Bootstrap</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat 
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				</p>
+			</div>
+			
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+				<img src="images/4.jpg" class="img-responsive"/>
+				<h3>Template built with Twitter Bootstrap</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat 
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				</p>
+			</div>
+			
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">				
+				<img src="images/4.jpg" class="img-responsive"/>
+				<h3>Template built with Twitter Bootstrap</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat 
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				</p>
+			</div>
+		</div>
+	</div>-->
+	
+	<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<br><h4 class="heading">Check Out Our Rooms and Suites</h4>
+
+				<!--<div id="filters-container" class="cbp-l-filters-button">
+					<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All<div class="cbp-filter-counter"></div></div>
+					<div data-filter=".identity" class="cbp-filter-item">Luxury Suites<div class="cbp-filter-counter"></div></div>
+					<div data-filter=".web-design" class="cbp-filter-item">Rooms<div class="cbp-filter-counter"></div></div>
+					<div data-filter=".graphic" class="cbp-filter-item">Swimming Pool<div class="cbp-filter-counter"></div></div>
+					<div data-filter=".logo" class="cbp-filter-item">Conference Halls<div class="cbp-filter-counter"></div></div>
+				</div>-->
+				
+
+				<div id="grid-container" class="cbp-l-grid-projects">
+					<ul>
+						<li class="cbp-item graphic">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/1.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<a href="img/works/1big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">bath</div>
+							<div class="cbp-l-grid-projects-desc">executive luxury</div>
+						</li>
+						<li class="cbp-item web-design logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/2.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<a href="img/works/2big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock Widget<br>by Paul Flavius Nechita">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">World Class</div>
+							<div class="cbp-l-grid-projects-desc">bath</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/3.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/3big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="To-Do Dashboard<br>by Tiberiu Neamu">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">deluxe-1-bedroom-bungalow</div>
+							<div class="cbp-l-grid-projects-desc">suite</div>
+						</li>
+						<li class="cbp-item web-design graphic">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/4.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/4big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Events and  More<br>by Tiberiu Neamu">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">executive-suite-pricate</div>
+							<div class="cbp-l-grid-projects-desc">pool</div>
+						</li>
+						<li class="cbp-item identity web-design">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/5.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											
+											<a href="img/works/5big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="WhereTO App<br>by Tiberiu Neamu">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Deluxe-Garden-View</div>
+							<div class="cbp-l-grid-projects-desc">Room</div>
+						</li>
+						<li class="cbp-item identity web-design">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/6.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											
+											<a href="img/works/6big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Deluxe hotel bedroom</div>
+							<div class="cbp-l-grid-projects-desc">Suite</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/7.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/7big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">interior-design-and-furniture</div>
+							<div class="cbp-l-grid-projects-desc">italian-style</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="img/works/8.jpg" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+										
+											<a href="img/works/8big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Kempinski-Nile-Room</div>
+							<div class="cbp-l-grid-projects-desc"></div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="cbp-l-loadMore-button">
+					<a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<br>
+	<section id="partner">
+        <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>Our Facilities</h2>
+                <p>Check out state of the art facilities <br></p>
+            </div>    
+
+            <div class="container">
+            <div class="">
+                <div class="portfolio-items">
+                    <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <br><p><strong>Free Wifi Access</strong></p>
+                                    <p>Browse free while you enjoy your stay with us with fast speed internet</p>
+                                    <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item joomla bootstrap col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item2.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <br><p><strong>Wedding</strong></p>
+                                    <p>Wedding hall to host your wedding events</p>
+                                    <a class="preview" href="images/portfolio/full/item2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item bootstrap wordpress col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item3.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <br><p><strong>Gym</strong></p>
+                                    <p>Excercise and keep fit with our gym facility</p>
+                                    <a class="preview" href="images/portfolio/full/item3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>        
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item4.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <br><p><strong>Catering service</strong></p>
+                                    <p>We offer eatry services for events</p>
+                                    <a class="preview" href="images/portfolio/full/item4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>           
+                    </div><!--/.portfolio-item-->
+			    </div>
+				</div>
+			</div>
+			<!--<div class="partners">
+                <ul>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="images/partners/partner1.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="images/partners/partner2.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="images/partners/partner3.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/partners/partner4.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="images/partners/partner5.png"></a></li>
+                </ul>
+            </div>-->        
+        </div><!--/.container-->
+    </section><!--/#partner-->
+	
+	<section id="conatcat-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="pull-left">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="media-body">
+                            <h2>Have a question?</h2>
+                            <p>You can reach us through the following numbers 08054433213 or 07055234112. You can also email us at info@company.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.container-->    
+    </section><!--/#conatcat-info-->
+	
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="social-icon">
+					<div class="col-md-4">
+						<ul class="social-network">
+							<li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+						</ul>	
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-md-offset-4">
+					<div class="copyright">
+						&copy; June  2015 by <a target="_blank" href="#" title="The best hopitality ever experience">Marina Byblos Hotel</a>. All Rights Reserved.
+					</div>
+                    <!-- 
+                        All links in the footer should remain intact. 
+                        Licenseing information is available at: http://bootstraptaste.com/license/
+                        You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Company
+                    -->
+				</div>						
+			</div>
+			
+			<div class="pull-right">
+				<a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+			</div>		
+		</div>
+	</footer>
+
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-2.1.1.min.js"></script>	
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+	<script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>  
+	<script src="js/wow.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/responsive-slider.js"></script>
+		
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="plugins/flexslider/jquery.flexslider-min.js"></script> 
+	<script src="plugins/flexslider/flexslider.config.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/uisearch.js"></script>
+	<script src="js/jquery.cubeportfolio.min.js"></script>
+	<script src="js/google-code-prettify/prettify.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/custom.js"></script>
+	
+  </body>
+</html>
